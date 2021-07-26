@@ -31,8 +31,7 @@ jobs:
         run: echo Hello, world!
 
       - name: get_packages
-        run: sudo sed -i 's/azure\.//' /etc/apt/sources.list
-          sudo apt-get update
+        run: sudo apt-get update
           sudo apt install openmpi-bin openmpi-common numdiff
         
       # Runs a set of commands using the runners shell
